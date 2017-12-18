@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0518ee66-4f55-4720-8f6e-c0c5d68f1d57}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Cryptocurrency-Pricing-Analysis.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="charts\html\aggregate-bitcoin-price.html" />
+    <Content Include="charts\html\altcoin_prices_combined.html" />
+    <Content Include="charts\html\combined-exchanges-pricing-clean.html" />
+    <Content Include="charts\html\combined-exchanges-pricing.html" />
+    <Content Include="charts\html\cryptocurrency-correlations-2016-v2.html" />
+    <Content Include="charts\html\cryptocurrency-correlations-2016.html" />
+    <Content Include="charts\html\cryptocurrency-correlations-2017-v2.html" />
+    <Content Include="charts\html\cryptocurrency-correlations-2017.html" />
+    <Content Include="charts\html\kraken_price_plot.html" />
+    <Content Include="charts\png\aggregate-bitcoin-price.png" />
+    <Content Include="charts\png\altcoin_prices_combined.png" />
+    <Content Include="charts\png\combined-exchanges-pricing-clean.png" />
+    <Content Include="charts\png\combined-exchanges-pricing.png" />
+    <Content Include="charts\png\cryptocurrency-correlations-2016-v2.png" />
+    <Content Include="charts\png\cryptocurrency-correlations-2016.png" />
+    <Content Include="charts\png\cryptocurrency-correlations-2017-v2.png" />
+    <Content Include="charts\png\cryptocurrency-correlations-2017.png" />
+    <Content Include="charts\png\kraken_price_plot.png" />
+    <Content Include="Cryptocurrency-Pricing-Analysis.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cryptocurrency-Pricing-Analysis.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="charts\" />
+    <Folder Include="charts\html" />
+    <Folder Include="charts\png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
